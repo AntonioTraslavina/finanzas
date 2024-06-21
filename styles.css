@@ -1,0 +1,75 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    padding: 20px;
+}
+
+.form-container {
+    background: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+input, button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+button {
+    background: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #555;
+}
+
+.resumen {
+    background: #fff;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.cuentas {
+    background: #fff;
+    padding: 20px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    background: #f4f4f4;
+    padding: 10px;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.pagada {
+    background: #d4edda;
+}
+
+.por-vencer {
+    background: #fff3cd;
+}
+
+.vencida {
+    background: #f8d7da;
+}

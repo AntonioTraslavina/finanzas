@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestor de Cuentas Mensuales</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="manifest" href="manifest.json">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon" href="icon.png">
+</head>
+<body>
+    <div class="container">
+        <h1>Gestor de Cuentas Mensuales</h1>
+        <div class="form-container">
+            <input type="text" id="nombre-cuenta" placeholder="Nombre de la cuenta">
+            <input type="number" id="monto" placeholder="Monto en CLP">
+            <input type="date" id="fecha-vencimiento">
+            <button onclick="agregarCuenta()">Agregar Cuenta</button>
+        </div>
+        <div class="resumen">
+            <h2>Total a pagar: $<span id="total-pagar">0</span></h2>
+            <h2>Total pagado: $<span id="total-pagado">0</span></h2>
+        </div>
+        <div class="cuentas">
+            <h3>Cuentas</h3>
+            <ul id="lista-cuentas"></ul>
+        </div>
+    </div>
+    <script>
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('sw.js')
+              .then((reg) => console.log('Service worker registered', reg))
+              .catch((err) => console.log('Service worker not registered', err));
+        }
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
